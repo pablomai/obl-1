@@ -29,11 +29,6 @@ spec:
   selector:
     app: details
 ---
-apiVersion: v1
-kind: ServiceAccount
-metadata:
-  name: bookinfo-details
----
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -76,11 +71,6 @@ spec:
     name: http
   selector:
     app: ratings
----
-apiVersion: v1
-kind: ServiceAccount
-metadata:
-  name: bookinfo-ratings
 ---
 apiVersion: apps/v1
 kind: Deployment
@@ -125,11 +115,6 @@ spec:
   selector:
     app: reviews
 ---
-apiVersion: v1
-kind: ServiceAccount
-metadata:
-  name: bookinfo-reviews
----
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -173,11 +158,6 @@ spec:
     name: http
   selector:
     app: productpage
----
-apiVersion: v1
-kind: ServiceAccount
-metadata:
-  name: bookinfo-productpage
 ---
 apiVersion: apps/v1
 kind: Deployment
