@@ -136,7 +136,7 @@ spec:
         app: reviews
         version: v1
     spec:
-       imagePullSecrets:
+      imagePullSecrets:
       - name: registry
       containers:
       - name: reviews
