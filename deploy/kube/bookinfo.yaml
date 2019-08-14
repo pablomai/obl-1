@@ -91,6 +91,7 @@ spec:
         app: ratings
         version: v1
     spec:
+      imagePullSecret: registry
       containers:
       - name: ratings
         image: cursocgn.azurecr.io/ratings-mai:v1
@@ -134,6 +135,7 @@ spec:
         app: reviews
         version: v1
     spec:
+      imagePullSecret: registry
       containers:
       - name: reviews
         image: cursocgn.azurecr.io/reviews-mai:v1
@@ -178,6 +180,7 @@ spec:
         app: productpage
         version: v1
     spec:
+      imagePullSecret: registry
       containers:
       - name: productpage
         image: cursocgn.azurecr.io/productpage-mai:v1
