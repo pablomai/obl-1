@@ -91,7 +91,7 @@ spec:
         app: ratings
         version: v1
     spec:
-      imagePullSecret:
+      imagePullSecrets:
       - name: registry
       containers:
       - name: ratings
@@ -136,7 +136,7 @@ spec:
         app: reviews
         version: v1
     spec:
-       imagePullSecret:
+       imagePullSecrets:
       - name: registry
       containers:
       - name: reviews
@@ -182,7 +182,7 @@ spec:
         app: productpage
         version: v1
     spec:
-      imagePullSecret:
+      imagePullSecrets:
       - name: registry
       containers:
       - name: productpage
