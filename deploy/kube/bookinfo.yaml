@@ -48,6 +48,8 @@ spec:
         app: details
         version: v1
     spec:
+      imagePullSecrets:
+      - name: registry
       containers:
       - name: details
         image: cursocgn.azurecr.io/details-mai:v1
